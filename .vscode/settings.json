@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/b76b6239-62f6-4fe7-b2f0-ceb30c8a241c/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/carway-api",
+    "appService.deploySubpath": "."
+}
