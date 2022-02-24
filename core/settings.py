@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-f3e-2#syr&n@8s*o1j^r3kaxgg*t5$&7yofxfw8$!l3q=a+y$('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['carway-api.herokuapp.net']
 

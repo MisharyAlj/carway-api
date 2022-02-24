@@ -15,8 +15,8 @@ class CustomUser(AbstractUser):
     salary = models.DecimalField(
         max_digits=6, decimal_places=2, blank=True, null=True)
 
-    USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['nationality_id', 'phone']
+    USERNAME_FIELD = 'nationality_id'
+    REQUIRED_FIELDS = ['phone', ]
 
     objects = CustomUserManager()
 
