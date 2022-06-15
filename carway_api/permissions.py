@@ -1,10 +1,9 @@
 from rest_framework import permissions
 
 
+# If the request is a safe method (GET, HEAD, OPTIONS), then allow it. Otherwise, only allow it if the
+# user is a superuser
 class IsSuperuserOrReadOnly(permissions.BasePermission):
-    """
-    Custom permission to only allow owners of an object to edit it.
-    """
 
     def has_permission(self, request, view):
         # Read permissions are allowed to any request,

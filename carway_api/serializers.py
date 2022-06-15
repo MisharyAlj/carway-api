@@ -73,3 +73,7 @@ class InvoiceCreateSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             "additional_services": {"required": False},
         }
+
+
+class EmptySerializer(serializers.Serializer):
+    pass

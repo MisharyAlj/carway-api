@@ -16,7 +16,7 @@ class CustomUser(AbstractUser):
         max_digits=6, decimal_places=2, blank=True, null=True)
 
     USERNAME_FIELD = 'nationality_id'
-    REQUIRED_FIELDS = ['phone', ]
+    REQUIRED_FIELDS = ['phone', 'email']
 
     objects = CustomUserManager()
 

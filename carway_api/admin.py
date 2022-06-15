@@ -1,9 +1,8 @@
 from django.contrib import admin
 from .models import AdditionalServices, Invoice, WashType
 
-# Register your models here.
 
-
+# A class that inherits from the ModelAdmin class. It is used to customize the admin interface.
 class InvoiceAdmin(admin.ModelAdmin):
     list_display = ('invoice_number', 'date', 'time', 'total')
 
